@@ -1,0 +1,137 @@
+.cards {
+  padding: 4rem;
+  background: #fff;
+  color: #adb6bf;
+}
+
+.cards__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cards__wrapper {
+  margin: 50px 0px 45px 0px;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+}
+
+.cards__item {
+  margin: 0 1rem;
+  border-radius: 10px;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.cards__item__link {
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 5px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 40%;
+  overflow: hidden;
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  left: 37%;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  opacity: 0;
+}
+
+.dot1 {
+  height: 10px;
+  width: 10px;
+  background-color: #01bcd3;
+  border-radius: 50%;
+  display: inline-block;
+  /* margin-right: 4px; */
+  margin: 14px 4px 10px 0 ;
+}
+
+.dot2 {
+  height: 10px;
+  width: 10px;
+  background-color: #fec106;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 14px 4px 10px 0 ;
+}
+
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  /* object-position: 15% 80%; */
+  object-position: 80% 80%;
+  /* object-fit: contain; */
+  transition: all 0.2s linear;
+}
+
+.cards__item__img:hover {
+  background-color: black;
+  filter: brightness(30%);
+  /* z-index: -1; */
+  /* opacity: 1; */
+}
+
+.cards__item__pic-wrap:hover .text {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+.author__details {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__item__info {
+  padding: 20px 30px 30px 30px;
+  margin-bottom: 10px;
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 23px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
